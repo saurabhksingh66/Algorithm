@@ -1,5 +1,7 @@
 package binomialCoef;
 
+import java.util.Arrays;
+
 
 public class BinomialCoefficient {
 	
@@ -18,7 +20,7 @@ public class BinomialCoefficient {
 			return 1;
 		if(fact[n] != 0) 
 			return fact[n];
-		return fact[n] = n * getFactorials(n - 1, fact);		
+		return fact[n] = n * getFactorials(n - 1, fact);	
 	}
 	
 	public int binomialCoef2(int n, int k) {
@@ -48,13 +50,14 @@ public class BinomialCoefficient {
 			for(int j = 1; j <= k; j++)
 				mem[i][j] = mem[i - 1][j - 1] + mem[i - 1][j];
 		}
-		
+		for(int[] in : mem)
+			System.out.println(Arrays.toString(in));
 		return mem[n][k];
 	}
 
 	public static void main(String[] args) {
 		BinomialCoefficient bcf = new BinomialCoefficient();
-		int n = 25, k = 2;
+		int n = 5, k = 4;
 	//	System.out.println(bcf.binomialCoef1(n, k));
 		//System.out.println(bcf.binomialCoef2(n, k));
 		System.out.println(bcf.binomialCoef3(n, k));

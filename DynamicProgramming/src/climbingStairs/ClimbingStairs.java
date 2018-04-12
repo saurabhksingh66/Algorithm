@@ -26,8 +26,7 @@ public class ClimbingStairs {
 			return n;
 		if (mem[n] != 0)
 			return mem[n];
-		mem[n] = auxClimbStairs2(mem, n - 1) + auxClimbStairs2(mem, n - 2);
-		return mem[n];
+		return mem[n] = auxClimbStairs2(mem, n - 1) + auxClimbStairs2(mem, n - 2);
 	}
 
 	public int climbStairs3(int n) {

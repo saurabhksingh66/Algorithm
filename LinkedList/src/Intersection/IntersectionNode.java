@@ -23,7 +23,7 @@ public class IntersectionNode {
 	public ListNode intersectionNode2(ListNode head1, ListNode head2) {
 		if (head1 != null && head2 != null) {
 			ListNode current1 = head1, current2 = head2;
-			int m = 0, n = 0, diff;
+			int m = 0, n = 0;
 			for (ListNode current = head1; current != null; current = current.next) {
 				++m;
 			}

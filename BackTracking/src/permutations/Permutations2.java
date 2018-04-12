@@ -43,7 +43,7 @@ public class Permutations2 {
 	
 	public static void main(String[] args) {
 		Permutations2 per = new Permutations2();
-		String s = "112";
+		String s = "AAA";
 		char[] in = s.toCharArray();
 		//int[] in1 = {1,2,3};
 		// per.permutations1(in);

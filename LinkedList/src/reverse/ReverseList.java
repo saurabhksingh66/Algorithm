@@ -49,7 +49,7 @@ public class ReverseList {
 		list.display();
 
 		ReverseList rList = new ReverseList();
-		SList.head = rList.reverseList2(SList.head);
+		list.head = rList.reverseList2(list.head);
 		list.display();
 	}
 

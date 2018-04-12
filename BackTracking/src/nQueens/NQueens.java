@@ -71,7 +71,7 @@ public class NQueens {
 
 	public static void main(String[] args) {
 		NQueens nq = new NQueens();
-		int n = 6;
+		int n = 4;
 		nq.nQueens1(n);
 		System.out.println();
 		System.out.println();

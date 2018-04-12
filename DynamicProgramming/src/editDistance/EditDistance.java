@@ -6,6 +6,8 @@
 
 package editDistance;
 
+import java.util.Arrays;
+
 public class EditDistance {
 
 	// TC:O(3 ^ (m+n) )
@@ -81,14 +83,16 @@ public class EditDistance {
 				}
 			}
 		}
+		for(int[] in : mem)
+			System.out.println(Arrays.toString(in));
 		return mem[m][n];
 	}
 	
 
 	public static void main(String[] args) {
 		EditDistance edit = new EditDistance();
-		String s1 = "abjfjglavnchdc";
-		String s2 = "baabjkllgjkfmncbe";
+		String s1 = "abcd";
+		String s2 = "aab";
 		//System.out.println(edit.editDistance1(s1, s2));
 		System.out.println(edit.editDistance2(s1, s2));
 		System.out.println(edit.editDistance3(s1, s2));

@@ -1,7 +1,6 @@
 package longestBitonicSubSequence;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class LonBitonicSubSeq {
 
@@ -43,14 +42,8 @@ public class LonBitonicSubSeq {
 	}
 	
 	public static void main(String[] args) {
-		Random r = new Random();
 		LonBitonicSubSeq lbs = new LonBitonicSubSeq();
-		int n = 6;
 		int[] in = {80, 60, 30, 40, 20, 10};
-		/*int[] in = new int[n];
-		for(int i = 0; i < n; ++i) {
-			in[i] = r.nextInt(9) + 1;
-		}*/
 		System.out.println(Arrays.toString(in));
 		System.out.println(lbs.lonBitonicSubSeq(in));
 	}

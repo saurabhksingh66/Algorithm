@@ -95,11 +95,11 @@ public class Permutations {
 
 	public static void main(String[] args) {
 		Permutations per = new Permutations();
-		String s = "123";
-		char[] in = s.toCharArray();
+		String s = "121";
+		int[] in = {1,2,1};
 		//int[] in1 = {1,2,3};
 		// per.permutations1(in);
-		per.permutations2(in);
+		per.permutations1(s.toCharArray());
 		//per.permutations3(in1);
 	}
 }

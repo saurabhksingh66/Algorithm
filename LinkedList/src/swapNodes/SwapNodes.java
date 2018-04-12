@@ -21,7 +21,7 @@ public class SwapNodes {
 		first = head;
 		second = head.next;
 		temp = second.next;
-		while (1 == 1) {
+		while (true) {
 			prev.next = second;
 			second.next = first;
 			first.next = temp;

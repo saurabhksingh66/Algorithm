@@ -58,8 +58,7 @@ public class MaxSum {
 		int topSum = auxMaxSum3(in, i - 1, j, mem);
 		int leftSum = auxMaxSum3(in, i, j - 1, mem);
 
-		mem[i][j] = Math.max(topSum, leftSum) + in[i][j];
-		return mem[i][j];
+		return mem[i][j] = Math.max(topSum, leftSum) + in[i][j];
 	}
 
 	public int maxSum4(int[][] in) {
@@ -73,7 +72,8 @@ public class MaxSum {
 						+ in[i - 1][j - 1];
 			}
 		}
-
+		for(int[] arr : mem)
+			System.out.println(Arrays.toString(arr));
 		getSequence(mem,mem.length-1,mem.length-1);
 		System.out.println();
 		return mem[n][n];

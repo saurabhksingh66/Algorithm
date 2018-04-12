@@ -3,9 +3,6 @@ package randomNode;
 import java.util.Random;
 import Node.*;
 
-
-import Node.*;
-
 class RandomNode {
 	ListNode rNode;
 

@@ -1,7 +1,7 @@
 package Node;
 
 public class SList {
-	public static ListNode head;
+	public ListNode head;
 	public ListNode last;
 
 	public SList() {

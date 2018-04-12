@@ -9,13 +9,10 @@ public class MoveZeros {
 		ListNode current = dummy.next, temp = dummy;
 		int i = 0;
 		while (current != null) {
-
 			while (current.value == 0) {
-				System.out.println("I am here");
 				++i;
 				current = current.next;
 			}
-			System.out.println("outside");
 			temp.next = current;
 			temp = current;
 			current = current.next;

@@ -39,7 +39,7 @@ public class ReverseGroups {
 		}
 		j = 1;
 
-		while (1 == 1) {
+		while (true) {
 			current = start;
 			prev = PREV;
 			while (i <= j * k) {
