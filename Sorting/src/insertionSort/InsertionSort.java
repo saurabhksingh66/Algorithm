@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class InsertionSort {
 	
 	public void insertionSort(int[] in) {
+		System.out.println("Process Starts Here!");
 		if(in == null || in.length < 1)
 			return;
 		for(int i = 1; i < in.length; ++i) {
@@ -22,6 +23,7 @@ public class InsertionSort {
 	public static void main(String[] args) {
 		int[] in = {1,3,8,7,1,5};
 		InsertionSort is = new InsertionSort();
+		System.out.println("ahaha");
 		System.out.println(Arrays.toString(in));
 		is.insertionSort(in);
 		System.out.println(Arrays.toString(in));

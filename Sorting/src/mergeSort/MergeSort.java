@@ -5,6 +5,7 @@ import quickSort.QuickSort;
 public class MergeSort {
 
 	public void mergeSort(int[] in) {
+		System.out.println("Merge Sort Starts Here!");
 		if (in == null || in.length < 1)
 			return;
 		int[] temp = new int[in.length];
