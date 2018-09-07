@@ -23,12 +23,14 @@ A solution set is:
 package combination;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Combination2 {
 	public List<List<Integer>> combination1(int[] in, int target) {
 		if (in == null || in.length < 1)
 			return null;
+		Arrays.sort(in);
 		List<List<Integer>> res = new ArrayList<>();
 		List<Integer> list = new ArrayList<Integer>();
 
@@ -55,9 +57,11 @@ public class Combination2 {
 			return;
 
 		for (int i = start; i < in.length; ++i) {
-			list.add(in[i]);
-			auxCombination1(in, list, res, i + 1, target - in[i]);
-			list.remove(list.size() - 1);
+			if(i == start || (i != start && in[i] != in[i - 1])) {
+				list.add(in[i]);
+				auxCombination1(in, list, res, i + 1, target - in[i]);
+				list.remove(list.size() - 1);
+			}
 		}
 	}
 	
