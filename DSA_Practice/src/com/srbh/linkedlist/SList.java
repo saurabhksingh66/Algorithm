@@ -42,5 +42,10 @@ public class SList {
 		System.out.println(sb.toString());
 	}
 	
-	
+	public ListNode arrayToList(int[] in) {
+		for (int i = 0; i < in.length; i++) {
+			this.addLast(in[i]);
+		}
+		return head;
+	}
 }
